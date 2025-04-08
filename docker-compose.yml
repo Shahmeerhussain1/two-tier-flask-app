@@ -23,7 +23,8 @@ services:
       start_period: 60s
 
   flask-app:
-    image: shahmeerhussain/two-tier-practice-app
+    build :
+      context : .
     container_name: flask-app
     ports:
       - "5000:5000"
